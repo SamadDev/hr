@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Interested"
+  },
+  {
+    "id": 1,
+    "name": "Not interested"
+  },
+  {
+    "id": 1,
+    "name": "No response/Busy"
+  },
+  {
+    "id": 1,
+    "name": "Requested more info"
+  },
+  {
+    "id": 1,
+    "name": "Requested call back"
+  }
+]

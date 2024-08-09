@@ -1,0 +1,90 @@
+name: nandrlon
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.4.7+86
+
+environment:
+  sdk: ">=2.11.0 <3.0.0"
+
+dependencies:
+
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  location: ^4.3.0
+  flutter_polyline_points: ^1.0.0
+  firebase_database: ^9.0.8
+  google_fonts: ^2.1.0
+  flutter_svg: ^0.22.0
+  pin_code_fields: ^7.3.0
+  percent_indicator: ^3.0.1
+  url_launcher: ^6.0.20
+  flutter_map: ^0.14.0
+  firebase_auth: ^3.3.9
+  firebase_core: ^1.13.1
+  cloud_firestore: ^3.1.10
+  firebase: ^9.0.2
+  cached_network_image: ^3.1.0
+  mask_text_input_formatter: ^2.0.0
+  shared_preferences: ^2.0.13
+  google_maps_flutter: ^2.1.3
+  map_launcher: ^2.1.1
+  intl: ^0.17.0
+  flutter_image_slideshow: ^0.1.2
+  syncfusion_flutter_datepicker: ^19.3.54
+  image_picker: ^0.8.6
+  file_picker: ^4.2.4
+  modal_bottom_sheet: ^2.0.0
+  geolocator: ^8.0.0
+  geocoding: ^2.0.1
+  json_annotation: ^4.4.0
+  loader_overlay: ^2.0.5
+  flutter_pdfview: ^1.2.1
+  path_provider: ^2.0.9
+  flutter_share: ^2.0.0
+  firebase_messaging: ^11.2.8
+  flutter_local_notifications: ^9.4.0
+  get_storage: ^2.0.3
+  flutter_html: ^2.2.1
+  easy_localization: ^3.0.1
+  firebase_remote_config: ^2.0.9
+  package_info_plus: ^1.4.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/image/
+    - assets/image/file/
+    - assets/svg/
+    - assets/json/
+    - assets/json/doctor-call/
+    - assets/translations/
+
+
+  fonts:
+    - family: KaushanScript-Regular
+      fonts:
+        - asset: assets/fonts/KaushanScript-Regular.otf
+
+    - family: aileron
+      fonts:
+        - asset: assets/fonts/aileron/Aileron-Regular.otf
+        - asset: assets/fonts/aileron/Aileron-SemiBold.otf
+          weight: 600
+        - asset: assets/fonts/aileron/Aileron-Bold.otf
+          weight: 700
+
+    - family: DroidKufi
+      fonts:
+        - asset: assets/fonts/DroidKufi/DroidKufi-Regular.ttf
+        - asset: assets/fonts/DroidKufi/DroidKufi-Bold.ttf
+          weight: 700

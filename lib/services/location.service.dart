@@ -1,0 +1,6 @@
+
+class LocationService {
+  static add(){
+
+  }
+}

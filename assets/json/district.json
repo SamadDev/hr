@@ -1,0 +1,456 @@
+[
+  {
+    "id": 2,
+    "name": "Ainkawa Kuran",
+    "latitude": 36.2328145,
+    "longitude": 43.9822406
+  },
+  {
+    "id": 3,
+    "name": "Andazayaran",
+    "latitude": 36.1622044,
+    "longitude": 44.0282427
+  },
+  {
+    "id": 5,
+    "name": "Ayinda 2",
+    "latitude": 36.1841821,
+    "longitude": 44.1242835
+  },
+  {
+    "id": 6,
+    "name": "Azadi 1",
+    "latitude": 36.1655611,
+    "longitude": 43.9977335
+  },
+  {
+    "id": 7,
+    "name": "Azadi 2",
+    "latitude": 36.17214,
+    "longitude": 44.0020358
+  },
+  {
+    "id": 8,
+    "name": "Badawa",
+    "latitude": 36.1667829,
+    "longitude": 44.034984
+  },
+  {
+    "id": 9,
+    "name": "Bakhtiary",
+    "latitude": 36.2065543,
+    "longitude": 43.9845585
+  },
+  {
+    "id": 10,
+    "name": "Behar",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 11,
+    "name": "Beşikağaç",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 12,
+    "name": "Charchra",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 13,
+    "name": "Chnar",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 14,
+    "name": "Dream City",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 15,
+    "name": "English Village",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 16,
+    "name": "Free Zone",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 17,
+    "name": "Galawezh",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 18,
+    "name": "Gulan 1",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 19,
+    "name": "Gulan 2",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 20,
+    "name": "Gökçetaş",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 21,
+    "name": "Havalan",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 22,
+    "name": "Hawlery Nwe",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 23,
+    "name": "Hemrin",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 24,
+    "name": "Hesarock 5",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 25,
+    "name": "Italian Village",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 26,
+    "name": "Kany",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 27,
+    "name": "Karezan",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 28,
+    "name": "Khanzad",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 29,
+    "name": "Komary",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 30,
+    "name": "Kuran",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 31,
+    "name": "Kurdistan",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 32,
+    "name": "Kwestan",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 33,
+    "name": "Lawan",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 34,
+    "name": "Mahabad",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 35,
+    "name": "Majidawa",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 36,
+    "name": "Mamostayan 1",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 37,
+    "name": "Mamostayan 2",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 38,
+    "name": "Mantkawa",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 39,
+    "name": "Mariwan",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 40,
+    "name": "Mestaufy",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 41,
+    "name": "Minara 1",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 42,
+    "name": "Minara 2",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 43,
+    "name": "Mufty",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 44,
+    "name": "Nawroz",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 45,
+    "name": "Naz",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 46,
+    "name": "Neshtiman",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 47,
+    "name": "Parliament",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 48,
+    "name": "Qarabo",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 49,
+    "name": "Raperin",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 50,
+    "name": "Rasty",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 51,
+    "name": "Rezgary 1",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 52,
+    "name": "Rezgary 2",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 53,
+    "name": "Rojhelat",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 54,
+    "name": "Ronaky",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 55,
+    "name": "Roshanbiry",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 56,
+    "name": "Rzgari 1",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 57,
+    "name": "Safeen 1",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 58,
+    "name": "Safeen 2",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 59,
+    "name": "Safeen 3",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 60,
+    "name": "Saidawa",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 61,
+    "name": "Salahaddin",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 62,
+    "name": "Sami Abdulrahman Park",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 63,
+    "name": "Sarbasty",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 64,
+    "name": "Sarwaran",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 65,
+    "name": "Setaqan",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 66,
+    "name": "Shady",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 67,
+    "name": "Sharawani",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 68,
+    "name": "Shoresh",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 69,
+    "name": "Taajeel",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 70,
+    "name": "Teyrawa",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 71,
+    "name": "Tureq",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 72,
+    "name": "Xabat",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 73,
+    "name": "Yeşilova",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 74,
+    "name": "Zagros",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 75,
+    "name": "Zanayan",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 76,
+    "name": "Zaniyari",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 77,
+    "name": "Zanko 1",
+    "latitude": 36.197419,
+    "longitude": 44.005585
+  },
+  {
+    "id": 78,
+    "name": "Zanko 2"
+  }
+]
