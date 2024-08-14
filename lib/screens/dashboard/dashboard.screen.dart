@@ -89,6 +89,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
               android: AndroidNotificationDetails(
                 channel.id,
                 channel.name,
+                channel.description,
                 color: Colors.blue,
                 playSound: true,
                 icon: '@mipmap/ic_lancher',
@@ -158,6 +159,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
         android: AndroidNotificationDetails(
           channel.id,
           channel.name,
+          channel.description,
           importance: Importance.high,
           color: Colors.blue,
           playSound: true,

@@ -16,8 +16,7 @@ class MyHttpOverrides extends HttpOverrides {
   @override
   HttpClient createHttpClient(SecurityContext context) {
     return super.createHttpClient(context)
-      ..badCertificateCallback =
-          (X509Certificate cert, String host, int port) => true;
+      ..badCertificateCallback = (X509Certificate cert, String host, int port) => true;
   }
 }
 
@@ -25,12 +24,11 @@ class MyHttpOverrides extends HttpOverrides {
 const AndroidNotificationChannel channel = AndroidNotificationChannel(
   'high_importance_channel', // id
   'High Importance Notifications', // title// description
-  importance: Importance.high,
+  "Importance.high",
 );
 
 // flutter local notification
-final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
-    FlutterLocalNotificationsPlugin();
+final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
 
 // firebase background message handler
 Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
@@ -49,8 +47,7 @@ void main() async {
 
 // Firebase local notification plugin
   await flutterLocalNotificationsPlugin
-      .resolvePlatformSpecificImplementation<
-          AndroidFlutterLocalNotificationsPlugin>()
+      .resolvePlatformSpecificImplementation<AndroidFlutterLocalNotificationsPlugin>()
       ?.createNotificationChannel(channel);
 
 //Firebase messaging
@@ -64,11 +61,7 @@ void main() async {
 
   runApp(
     EasyLocalization(
-      supportedLocales: [
-        Locale('en', 'US'),
-        Locale('ar', 'IQ'),
-        Locale('fa', 'IR')
-      ],
+      supportedLocales: [Locale('en', 'US'), Locale('ar', 'IQ'), Locale('fa', 'IR')],
       path: 'assets/translations',
       fallbackLocale: Locale('en', 'US'),
       child: MyApp(),
@@ -79,7 +72,6 @@ void main() async {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-
     return GestureDetector(
       onTap: () {
         FocusScope.of(context).requestFocus(new FocusNode());
@@ -91,7 +83,11 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: box.read('company') ?? "",
         theme: lightTheme(context, context.locale.languageCode),
-        home: box.read('languageCode') == null ? LanguageScreen() : box.read('company') == null ? CompanyScreen() : SplashScreen(),
+        home: box.read('languageCode') == null
+            ? LanguageScreen()
+            : box.read('company') == null
+                ? CompanyScreen()
+                : SplashScreen(),
         routes: routes,
       ),
     );

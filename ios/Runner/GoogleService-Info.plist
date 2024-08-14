@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>360545531246-7at2srfdrhta61ilfa1clb3abh9k4t5r.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.360545531246-7at2srfdrhta61ilfa1clb3abh9k4t5r</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>360545531246-jr8q0c3ehvegvl4leiepnv2c3vpgsgiu.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAuVk4cewfww7DGjf5OWOUDsXYf9TVw6YM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>360545531246</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.kardo.nandrlonco</string>
+	<key>PROJECT_ID</key>
+	<string>nandrlon</string>
+	<key>STORAGE_BUCKET</key>
+	<string>nandrlon.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:360545531246:ios:bd2f7a2e2d33dd4c1bbd7f</string>
+	<key>DATABASE_URL</key>
+	<string>https://nandrlon-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
