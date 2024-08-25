@@ -20,7 +20,7 @@ import 'package:nandrlon/widgets/list.widget.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class LeaveScreen extends StatefulWidget {
-  const LeaveScreen({Key key}) : super(key: key);
+  const LeaveScreen();
 
   @override
   _LeaveScreenState createState() => _LeaveScreenState();

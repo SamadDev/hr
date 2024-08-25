@@ -13,7 +13,7 @@ import 'package:nandrlon/widgets/list.widget.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 class PunishmentScreen extends StatefulWidget {
-  PunishmentScreen({Key key}) : super(key: key);
+  PunishmentScreen();
 
   @override
   State<PunishmentScreen> createState() => _PunishmentScreenState();

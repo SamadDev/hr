@@ -3,7 +3,7 @@ import 'package:nandrlon/widgets/appbar.widget.dart';
 import 'package:nandrlon/widgets/layout.widget.dart';
 
 class TeamTaskScreen extends StatefulWidget {
-  const TeamTaskScreen({Key key}) : super(key: key);
+  const TeamTaskScreen();
 
   @override
   _TeamTaskScreenState createState() => _TeamTaskScreenState();

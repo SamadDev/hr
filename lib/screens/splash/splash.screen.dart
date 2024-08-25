@@ -26,7 +26,7 @@ import '../dashboard/dashboard.screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const
-  SplashScreen({Key key}) : super(key: key);
+  SplashScreen();
 
   @override
   _SplashScreenState createState() => _SplashScreenState();

@@ -1,3 +1,4 @@
+// @dart=2.9
 import 'package:nandrlon/models/crm/contact/contact.dart';
 
 class ContactResult extends Contact {

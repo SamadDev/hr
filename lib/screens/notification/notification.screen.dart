@@ -17,7 +17,7 @@ import 'package:nandrlon/widgets/list.widget.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class NotificationScreen extends StatefulWidget {
-  const NotificationScreen({Key key}) : super(key: key);
+  const NotificationScreen();
 
   @override
   NotificationStateScreen createState() => NotificationStateScreen();

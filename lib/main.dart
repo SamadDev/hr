@@ -22,9 +22,10 @@ class MyHttpOverrides extends HttpOverrides {
 
 //Global Initialization
 const AndroidNotificationChannel channel = AndroidNotificationChannel(
-  'high_importance_channel', // id
-  'High Importance Notifications', // title// description
-  "Importance.high",
+  'high_importance_channel',
+  'High Importance Notifications',
+  //todo uncomment
+  // "Importance.high",
 );
 
 // flutter local notification

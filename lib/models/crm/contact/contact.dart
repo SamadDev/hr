@@ -1,6 +1,8 @@
+// @dart=2.9
 import 'package:nandrlon/models/crm/customer/customer.dart';
 import 'package:nandrlon/models/crm/shared/gender.dart';
 import 'package:nandrlon/models/crm/shared/spoken-language.dart';
+
 
 class Contact {
   int id;

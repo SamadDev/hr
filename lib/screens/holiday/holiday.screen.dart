@@ -17,7 +17,7 @@ import 'package:nandrlon/widgets/list.widget.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class HolidayScreen extends StatefulWidget {
-  HolidayScreen({Key key}) : super(key: key);
+  HolidayScreen();
 
   @override
   State<HolidayScreen> createState() => _HolidayScreenState();

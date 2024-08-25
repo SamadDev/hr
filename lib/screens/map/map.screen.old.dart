@@ -15,7 +15,7 @@ import 'package:nandrlon/widgets/layout.widget.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class MapScreen extends StatefulWidget {
-  MapScreen({Key key}) : super(key: key);
+  MapScreen();
 
   @override
   _MapScreenState createState() => _MapScreenState();

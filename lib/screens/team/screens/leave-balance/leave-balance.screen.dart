@@ -15,7 +15,7 @@ import 'package:nandrlon/widgets/list.widget.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class LeaveBalanceScreen extends StatefulWidget {
-  LeaveBalanceScreen({Key key}) : super(key: key);
+  LeaveBalanceScreen();
 
   @override
   LleaveBalanceStateScreen createState() => LleaveBalanceStateScreen();

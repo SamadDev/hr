@@ -9,7 +9,7 @@ import 'package:nandrlon/widgets/image.widget.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class DrawerWidget extends StatefulWidget {
-  DrawerWidget({Key key}) : super(key: key);
+  DrawerWidget();
 
   @override
   _DrawerWidgetState createState() => _DrawerWidgetState();

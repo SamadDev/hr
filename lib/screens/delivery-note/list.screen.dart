@@ -19,7 +19,7 @@ import 'package:nandrlon/widgets/list.widget.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 class DeliveryNoteScreen extends StatefulWidget {
-  const DeliveryNoteScreen({Key key}) : super(key: key);
+  const DeliveryNoteScreen();
 
   @override
   ContactListStateScreen createState() => ContactListStateScreen();

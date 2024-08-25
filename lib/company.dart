@@ -11,7 +11,7 @@ import 'package:nandrlon/widgets/layout.widget.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class CompanyScreen extends StatefulWidget {
-  CompanyScreen({Key key}) : super(key: key);
+  CompanyScreen();
 
   @override
   State<CompanyScreen> createState() => _CompanyScreenState();

@@ -23,7 +23,7 @@ import 'package:nandrlon/widgets/loading.widget.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 class CustomerListScreen extends StatefulWidget {
-  const CustomerListScreen({Key key}) : super(key: key);
+  const CustomerListScreen();
 
   @override
   CustomerListStateScreen createState() => CustomerListStateScreen();

@@ -17,7 +17,7 @@ import 'package:nandrlon/widgets/pdf-viewr.dart';
 import 'package:nandrlon/widgets/text_field.widget.dart';
 
 class ReportScreen extends StatefulWidget {
-  ReportScreen({Key key}) : super(key: key);
+  ReportScreen();
 
   @override
   _ReportScreenState createState() => _ReportScreenState();

@@ -12,7 +12,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class MyTeamListScreen extends StatefulWidget {
-  MyTeamListScreen({Key key}) : super(key: key);
+  MyTeamListScreen();
 
   @override
   _MyTeamListScreenState createState() => _MyTeamListScreenState();

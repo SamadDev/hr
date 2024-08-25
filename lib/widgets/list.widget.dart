@@ -79,7 +79,7 @@ class ListViewHelper extends StatelessWidget {
 }
 
 class NoDataFound extends StatelessWidget {
-  NoDataFound({Key key}) : super(key: key);
+  NoDataFound();
 
   @override
   Widget build(BuildContext context) {

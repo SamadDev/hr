@@ -10,7 +10,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'dart:ui' as ui;
 
 class UpdateScreen extends StatefulWidget {
-  const UpdateScreen({Key key}) : super(key: key);
+  const UpdateScreen();
 
   @override
   _UpdateScreenState createState() => _UpdateScreenState();

@@ -18,7 +18,7 @@ import 'package:nandrlon/widgets/list.widget.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ItemListScreen extends StatefulWidget {
-  const ItemListScreen({Key key}) : super(key: key);
+  const ItemListScreen();
 
   @override
   ItemListStateScreen createState() => ItemListStateScreen();

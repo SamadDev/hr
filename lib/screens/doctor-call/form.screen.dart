@@ -10,7 +10,7 @@ import 'package:nandrlon/widgets/layout.widget.dart';
 import 'package:nandrlon/widgets/text_field.widget.dart';
 
 class DoctorCallFormScreen extends StatefulWidget {
-  const DoctorCallFormScreen({Key key}) : super(key: key);
+  const DoctorCallFormScreen();
 
   @override
   _DoctorCallFormScreenState createState() => _DoctorCallFormScreenState();

@@ -13,7 +13,7 @@ import 'package:nandrlon/widgets/layout.widget.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 class DoctorListScreen extends StatefulWidget {
-  const DoctorListScreen({Key key}) : super(key: key);
+  const DoctorListScreen();
 
   @override
   DoctorListStateScreen createState() => DoctorListStateScreen();

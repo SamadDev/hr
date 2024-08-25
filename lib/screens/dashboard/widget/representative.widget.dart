@@ -7,7 +7,7 @@ import 'package:nandrlon/screens/map/map.screen.dart';
 import 'package:nandrlon/screens/sales-order/list.screen.dart';
 
 class RepresentativeWidget extends StatelessWidget {
-  const RepresentativeWidget({Key key}) : super(key: key);
+  const RepresentativeWidget();
 
   @override
   Widget build(BuildContext context) {

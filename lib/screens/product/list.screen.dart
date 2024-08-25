@@ -11,7 +11,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 class ProductListScreen extends StatefulWidget {
-  const ProductListScreen({Key key}) : super(key: key);
+  const ProductListScreen();
 
   @override
   ProductListStateScreen createState() => ProductListStateScreen();

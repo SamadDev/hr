@@ -6,7 +6,7 @@ import 'package:nandrlon/widgets/card.widget.dart';
 import 'package:nandrlon/widgets/layout.widget.dart';
 
 class OrderScreen extends StatefulWidget {
-  const OrderScreen({Key key}) : super(key: key);
+  const OrderScreen();
 
   @override
   _OrderScreenState createState() => _OrderScreenState();

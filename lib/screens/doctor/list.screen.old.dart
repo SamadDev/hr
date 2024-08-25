@@ -11,7 +11,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 class DoctorListScreen extends StatefulWidget {
-  const DoctorListScreen({Key key}) : super(key: key);
+  const DoctorListScreen();
 
   @override
   DoctorListStateScreen createState() => DoctorListStateScreen();

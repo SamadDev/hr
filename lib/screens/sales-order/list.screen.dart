@@ -26,7 +26,7 @@ import 'package:nandrlon/widgets/loading.widget.dart';
 import 'package:nandrlon/widgets/pdf-viewr.dart';
 
 class SalesOrderListScreen extends StatefulWidget {
-  const SalesOrderListScreen({Key key}) : super(key: key);
+  const SalesOrderListScreen();
 
   @override
   ContactListStateScreen createState() => ContactListStateScreen();

@@ -1,3 +1,4 @@
+// @dart=2.9
 import 'package:nandrlon/models/crm/customer/customer.dart';
 import 'package:nandrlon/models/crm/shared/city.dart';
 import 'package:nandrlon/models/crm/shared/district.dart';

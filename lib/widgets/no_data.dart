@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class NoDataFound extends StatelessWidget {
-  NoDataFound({Key key}) : super(key: key);
+  NoDataFound();
 
   @override
   Widget build(BuildContext context) {

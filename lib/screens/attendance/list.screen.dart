@@ -20,7 +20,7 @@ import 'package:nandrlon/widgets/loading.widget.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AttendanceScreen extends StatefulWidget {
-  const AttendanceScreen({Key key}) : super(key: key);
+  const AttendanceScreen();
 
   @override
   _AttendanceScreenState createState() => _AttendanceScreenState();

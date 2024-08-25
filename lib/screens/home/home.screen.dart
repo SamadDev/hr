@@ -11,7 +11,7 @@ import 'package:nandrlon/widgets/bottom_navy_bar.dart';
 import 'package:nandrlon/widgets/drawer.widegt.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key key}) : super(key: key);
+  const HomeScreen();
 
   @override
   _HomeScreenState createState() => _HomeScreenState();

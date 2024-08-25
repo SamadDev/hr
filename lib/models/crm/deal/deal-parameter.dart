@@ -1,5 +1,4 @@
 
-
 class DealParameters {
   String searchText;
   String fromDate;

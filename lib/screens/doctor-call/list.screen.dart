@@ -5,7 +5,7 @@ import 'package:nandrlon/widgets/appbar.widget.dart';
 import 'package:nandrlon/widgets/layout.widget.dart';
 
 class DoctorCallListScreen extends StatefulWidget {
-  const DoctorCallListScreen({Key key}) : super(key: key);
+  const DoctorCallListScreen();
 
   @override
   _DoctorCallListScreenState createState() => _DoctorCallListScreenState();

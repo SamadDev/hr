@@ -14,7 +14,7 @@
 // import 'package:nandrlon/widgets/layout.widget.dart';
 //
 // class SplashScreen extends StatefulWidget {
-//   const SplashScreen({Key key}) : super(key: key);
+//   const SplashScreen();
 //
 //   @override
 //   _SplashScreenState createState() => _SplashScreenState();

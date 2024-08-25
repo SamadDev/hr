@@ -9,7 +9,7 @@ import 'package:nandrlon/widgets/layout.widget.dart';
 import 'package:nandrlon/widgets/text_field.widget.dart';
 
 class OrderFormScreen extends StatefulWidget {
-  const OrderFormScreen({Key key}) : super(key: key);
+  const OrderFormScreen();
 
   @override
   _OrderFormScreenState createState() => _OrderFormScreenState();

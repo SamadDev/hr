@@ -12,7 +12,7 @@ import 'package:nandrlon/widgets/layout.widget.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class LoginScreen extends StatefulWidget {
-  const LoginScreen({Key key}) : super(key: key);
+  const LoginScreen();
 
   @override
   _LoginScreenState createState() => _LoginScreenState();

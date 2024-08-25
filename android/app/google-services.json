@@ -15,6 +15,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "360545531246-d4am0k69kq6f2j6an67tpqjen3sds8pn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kardo.nandrlonco",
+            "certificate_hash": "74b62b006b0526ecd1016c37c111edba978e9ccd"
+          }
+        },
+        {
+          "client_id": "360545531246-h9jl580hkrusoa72587rgs7akl4k675t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kardo.nandrlonco",
+            "certificate_hash": "57a451bbd95a56c52aa4789f2d809c9d41323f41"
+          }
+        },
+        {
           "client_id": "360545531246-0popsiidavnt4c7ogup62l2b4et4jo53.apps.googleusercontent.com",
           "client_type": 3
         }

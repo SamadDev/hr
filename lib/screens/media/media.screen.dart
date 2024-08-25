@@ -12,7 +12,7 @@ import 'package:nandrlon/widgets/list.widget.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 class MediaScreen extends StatefulWidget {
-  const MediaScreen({Key key}) : super(key: key);
+  const MediaScreen();
 
   @override
   MediaStateScreen createState() => MediaStateScreen();

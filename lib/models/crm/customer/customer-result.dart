@@ -1,3 +1,4 @@
+
 import 'package:nandrlon/models/crm/customer/customer.dart';
 
 class CustomerResult extends Customer {

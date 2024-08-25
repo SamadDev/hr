@@ -16,7 +16,7 @@ import '../company.dart';
 import 'authentication/login/login.screen.dart';
 
 class LanguageScreen extends StatefulWidget {
-  const LanguageScreen({Key key}) : super(key: key);
+  const LanguageScreen();
 
   @override
   _LanguageScreenState createState() => _LanguageScreenState();

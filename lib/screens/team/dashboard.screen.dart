@@ -26,7 +26,7 @@ import 'package:nandrlon/widgets/loading.widget.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class TeamDashboardScreen extends StatefulWidget {
-  TeamDashboardScreen({Key key}) : super(key: key);
+  TeamDashboardScreen();
 
   @override
   _TeamDashboardScreenState createState() => _TeamDashboardScreenState();

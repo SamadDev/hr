@@ -8,7 +8,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 class EmployeeScreen extends StatefulWidget {
-  const EmployeeScreen({Key key}) : super(key: key);
+  const EmployeeScreen();
 
   @override
   _EmployeeScreenState createState() => _EmployeeScreenState();

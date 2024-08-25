@@ -18,7 +18,7 @@ import 'package:nandrlon/widgets/list.widget.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ContactListScreen extends StatefulWidget {
-  const ContactListScreen({Key key}) : super(key: key);
+  const ContactListScreen();
 
   @override
   ContactListStateScreen createState() => ContactListStateScreen();

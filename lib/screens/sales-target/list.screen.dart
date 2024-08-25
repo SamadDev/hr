@@ -14,7 +14,7 @@ import 'package:nandrlon/widgets/list.widget.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 
 class SalesTargetScreen extends StatefulWidget {
-  const SalesTargetScreen({Key key}) : super(key: key);
+  const SalesTargetScreen();
 
   @override
   SalesTargetListStateScreen createState() => SalesTargetListStateScreen();

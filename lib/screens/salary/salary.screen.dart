@@ -16,7 +16,7 @@ import 'package:nandrlon/widgets/list.widget.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SalaryScreen extends StatefulWidget {
-  SalaryScreen({Key key}) : super(key: key);
+  SalaryScreen();
 
   @override
   State<SalaryScreen> createState() => _SalaryScreenState();

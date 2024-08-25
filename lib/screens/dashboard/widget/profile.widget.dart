@@ -9,7 +9,7 @@ import 'package:nandrlon/screens/salary/salary.screen.dart';
 import 'package:nandrlon/screens/team/dashboard.screen.dart';
 
 class ProfileWidget extends StatelessWidget {
-  const ProfileWidget({Key key}) : super(key: key);
+  const ProfileWidget();
 
   @override
   Widget build(BuildContext context) {
