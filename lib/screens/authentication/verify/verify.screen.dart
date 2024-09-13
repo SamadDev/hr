@@ -1,9 +1,9 @@
 import 'dart:async';
 import 'dart:convert';
 
-import 'package:cloud_firestore/cloud_firestore.dart';
+// import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+// import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:nandrlon/config/themes/light.theme.dart';
 import 'package:nandrlon/helper/text.helper.dart';
@@ -30,8 +30,8 @@ class VerifyScreen extends StatefulWidget {
 }
 
 class _VerifyScreenState extends State<VerifyScreen> {
-  CollectionReference users = FirebaseFirestore.instance.collection('users');
-  FirebaseAuth _auth = FirebaseAuth.instance;
+  // CollectionReference users = FirebaseFirestore.instance.collection('users');
+  // FirebaseAuth _auth = FirebaseAuth.instance;
   var _codeController = TextEditingController();
   var errorController = StreamController<ErrorAnimationType>();
   String verId;
@@ -47,30 +47,30 @@ class _VerifyScreenState extends State<VerifyScreen> {
   }
 
   Future<void> verifyPhone() async {
-    await FirebaseAuth.instance.verifyPhoneNumber(
-      phoneNumber: "+964" + widget.phoneNumber.substring(1).trim(),
-      verificationCompleted: (PhoneAuthCredential credential) async {
-        // await FirebaseAuth.instance.signInWithCredential(credential);
-        // final snackBar = SnackBar(content: Text("Login Success"));
-        // ScaffoldMessenger.of(context).showSnackBar(snackBar);
-      },
-      verificationFailed: (FirebaseAuthException e) {
-        final snackBar = SnackBar(content: Text("${e.message}"));
-        ScaffoldMessenger.of(context).showSnackBar(snackBar);
-      },
-      codeSent: (String verficationId, int resendToken) {
-        setState(() {
-          codeSent = true;
-          verId = verficationId;
-        });
-      },
-      codeAutoRetrievalTimeout: (String verificationId) {
-        setState(() {
-          verId = verificationId;
-        });
-      },
-      timeout: Duration(seconds: 60),
-    );
+    // await FirebaseAuth.instance.verifyPhoneNumber(
+    //   phoneNumber: "+964" + widget.phoneNumber.substring(1).trim(),
+    //   verificationCompleted: (PhoneAuthCredential credential) async {
+    //     // await FirebaseAuth.instance.signInWithCredential(credential);
+    //     // final snackBar = SnackBar(content: Text("Login Success"));
+    //     // ScaffoldMessenger.of(context).showSnackBar(snackBar);
+    //   },
+    //   verificationFailed: (FirebaseAuthException e) {
+    //     final snackBar = SnackBar(content: Text("${e.message}"));
+    //     ScaffoldMessenger.of(context).showSnackBar(snackBar);
+    //   },
+    //   codeSent: (String verficationId, int resendToken) {
+    //     setState(() {
+    //       codeSent = true;
+    //       verId = verficationId;
+    //     });
+    //   },
+    //   codeAutoRetrievalTimeout: (String verificationId) {
+    //     setState(() {
+    //       verId = verificationId;
+    //     });
+    //   },
+    //   timeout: Duration(seconds: 60),
+    // );
   }
 
   crmLogin() async {
@@ -93,45 +93,46 @@ class _VerifyScreenState extends State<VerifyScreen> {
     });
 
     try {
-      PhoneAuthCredential credential = PhoneAuthProvider.credential(
-          verificationId: verId, smsCode: _codeController.text);
+      // PhoneAuthCredential credential = PhoneAuthProvider.credential(
+      //     verificationId: verId, smsCode: _codeController.text);
 
-      final User user =
-          (await FirebaseAuth.instance.signInWithCredential(credential)).user;
+      // final User user =
+      //     (await FirebaseAuth.instance.signInWithCredential(credential)).user;
 
-      if (user != null) {
-        prefs.setBool("isLoggedIn", true);
-        box.write("isLoggedIn", true);
-        // var currentLocation = await Geolocator.getCurrentPosition();
-
-        var user = await users
-            .where('id', isEqualTo: widget.user['id'])
-            .snapshots()
-            .first;
-
-        // widget.user['latitude'] = currentLocation.latitude;
-        // widget.user['longitude'] = currentLocation.longitude;
-
-        if (user.docs.isEmpty) {
-          var newUser = await users.add(widget.user);
-          prefs.setString('firestoreId', newUser.id);
-        } else {
-          prefs.setString('firestoreId', user.docs.first.id);
-          users.doc(user.docs.first.id).set(widget.user);
-        }
-        var token = prefs.getString("fcmToken");
-
-        if (token != null) {
-          if (token != null) await EmployeeService.updateToken(id, token);
-        }
-
-        await EmployeeService.updateLanguage(id, context.locale.languageCode);
-
-        crmLogin();
-        Navigator.of(context)
-            .pushNamedAndRemoveUntil('/home', (Route<dynamic> route) => false);
-      }
-    } on FirebaseAuthException catch (e) {
+      // if (user != null) {
+      //   prefs.setBool("isLoggedIn", true);
+      //   box.write("isLoggedIn", true);
+      //   // var currentLocation = await Geolocator.getCurrentPosition();
+      //
+      //   // var user = await users
+      //   //     .where('id', isEqualTo: widget.user['id'])
+      //   //     .snapshots()
+      //   //     .first;
+      //
+      //   // widget.user['latitude'] = currentLocation.latitude;
+      //   // widget.user['longitude'] = currentLocation.longitude;
+      //
+      //   if (user.docs.isEmpty) {
+      //     var newUser = await users.add(widget.user);
+      //     prefs.setString('firestoreId', newUser.id);
+      //   } else {
+      //     prefs.setString('firestoreId', user.docs.first.id);
+      //     users.doc(user.docs.first.id).set(widget.user);
+      //   }
+      //   var token = prefs.getString("fcmToken");
+      //
+      //   if (token != null) {
+      //     if (token != null) await EmployeeService.updateToken(id, token);
+      //   }
+      //
+      //   await EmployeeService.updateLanguage(id, context.locale.languageCode);
+      //
+      //   crmLogin();
+      //   Navigator.of(context)
+      //       .pushNamedAndRemoveUntil('/home', (Route<dynamic> route) => false);
+      // }
+    }  catch (e) {
+    // } on FirebaseAuthException catch (e) {
       prefs.setBool("isLogin", false);
 
       setState(() {

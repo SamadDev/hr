@@ -7,7 +7,7 @@ import 'package:nandrlon/config/themes/light.theme.dart';
 import 'package:nandrlon/screens/language.screen.dart';
 import 'package:nandrlon/screens/splash/splash.screen.dart';
 import 'package:nandrlon/company.dart';
-import 'package:firebase_messaging/firebase_messaging.dart';
+// import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:easy_localization/easy_localization.dart';
@@ -32,7 +32,8 @@ const AndroidNotificationChannel channel = AndroidNotificationChannel(
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
 
 // firebase background message handler
-Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
+Future<void> _firebaseMessagingBackgroundHandler( message) async {
+// Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
   await Firebase.initializeApp();
 //
 }
@@ -44,7 +45,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
 
-  FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
+  // FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
 
 // Firebase local notification plugin
   await flutterLocalNotificationsPlugin
@@ -52,11 +53,11 @@ void main() async {
       ?.createNotificationChannel(channel);
 
 //Firebase messaging
-  await FirebaseMessaging.instance.setForegroundNotificationPresentationOptions(
-    alert: true,
-    badge: true,
-    sound: true,
-  );
+//   await FirebaseMessaging.instance.setForegroundNotificationPresentationOptions(
+//     alert: true,
+//     badge: true,
+//     sound: true,
+//   );
 
   await EasyLocalization.ensureInitialized();
 

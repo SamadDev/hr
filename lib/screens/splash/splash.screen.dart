@@ -1,9 +1,9 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:firebase_remote_config/firebase_remote_config.dart';
+// import 'package:cloud_firestore/cloud_firestore.dart';
+// import 'package:firebase_messaging/firebase_messaging.dart';
+// import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
@@ -34,9 +34,9 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   int _counter = 0;
-  FirebaseMessaging messaging = FirebaseMessaging.instance;
-  FirebaseFirestore firestore = FirebaseFirestore.instance;
-  CollectionReference users = FirebaseFirestore.instance.collection('users');
+  // FirebaseMessaging messaging = FirebaseMessaging.instance;
+  // FirebaseFirestore firestore = FirebaseFirestore.instance;
+  // CollectionReference users = FirebaseFirestore.instance.collection('users');
   LocationData _currentLocation;
   Location location = Location();
   double latitude;
@@ -61,40 +61,40 @@ class _SplashScreenState extends State<SplashScreen> {
     double.parse(info.version.trim().replaceAll(".", ""));
 
     //Get Latest version info from firebase config
-    final FirebaseRemoteConfig remoteConfig = await FirebaseRemoteConfig.instance;
-    await remoteConfig.ensureInitialized();
+    // final FirebaseRemoteConfig remoteConfig = await FirebaseRemoteConfig.instance;
+    // await remoteConfig.ensureInitialized();
 
-    try {
-      // Using default duration to force fetching from remote server.
-      await remoteConfig.setConfigSettings(RemoteConfigSettings(
-        fetchTimeout: const Duration(seconds: 10),
-        minimumFetchInterval: Duration.zero,
-      ));
-      await remoteConfig.fetchAndActivate();
-
-      remoteConfig.getString(Platform.isIOS ? 'iosVersion' : 'androidVersion');
-      double newVersion = double.parse(remoteConfig
-          .getString(Platform.isIOS ? 'iosVersion' : 'androidVersion')
-          .trim()
-          .replaceAll(".", ""));
-
-      print("currentVersion");
-      print(currentVersion);
-      print(newVersion);
-
-      if (newVersion > currentVersion) {
-        Navigator.of(context).pushReplacement(
-          MaterialPageRoute(
-            builder: (BuildContext context) => UpdateScreen(),
-          ),
-        );
-      } else {
-        onLoad();
-      }
-    } on Exception catch (exception) {
+    // try {
+    //   // Using default duration to force fetching from remote server.
+    //   await remoteConfig.setConfigSettings(RemoteConfigSettings(
+    //     fetchTimeout: const Duration(seconds: 10),
+    //     minimumFetchInterval: Duration.zero,
+    //   ));
+    //   await remoteConfig.fetchAndActivate();
+    //
+    //   remoteConfig.getString(Platform.isIOS ? 'iosVersion' : 'androidVersion');
+    //   double newVersion = double.parse(remoteConfig
+    //       .getString(Platform.isIOS ? 'iosVersion' : 'androidVersion')
+    //       .trim()
+    //       .replaceAll(".", ""));
+    //
+    //   print("currentVersion");
+    //   print(currentVersion);
+    //   print(newVersion);
+    //
+    //   if (newVersion > currentVersion) {
+    //     Navigator.of(context).pushReplacement(
+    //       MaterialPageRoute(
+    //         builder: (BuildContext context) => UpdateScreen(),
+    //       ),
+    //     );
+    //   } else {
+    //     onLoad();
+    //   }
+    // } on Exception catch (exception) {
       // Fetch throttled.
 
-    } catch (exception) {}
+    // } catch (exception) {}
   }
 
   onLoad() async {
@@ -122,26 +122,26 @@ class _SplashScreenState extends State<SplashScreen> {
       prefs.setString('dashboard', json.encode(dashboard));
     }
 
-    messaging.getToken().then((token) async {
-      prefs.setString("fcmToken", token);
-      if (employeeProfile != null && employeeProfile.token != token) {
-        await EmployeeService.updateToken(id, token);
-      }
-    });
+    // messaging.getToken().then((token) async {
+    //   prefs.setString("fcmToken", token);
+    //   if (employeeProfile != null && employeeProfile.token != token) {
+    //     await EmployeeService.updateToken(id, token);
+    //   }
+    // });
 
     setState(() {
       company = prefs.getString("company");
     });
 
-    NotificationSettings settings = await messaging.requestPermission(
-      alert: true,
-      announcement: false,
-      badge: true,
-      carPlay: false,
-      criticalAlert: false,
-      provisional: false,
-      sound: true,
-    );
+    // NotificationSettings settings = await messaging.requestPermission(
+    //   alert: true,
+    //   announcement: false,
+    //   badge: true,
+    //   carPlay: false,
+    //   criticalAlert: false,
+    //   provisional: false,
+    //   sound: true,
+    // );
 
     Navigator.pushAndRemoveUntil(
       context,

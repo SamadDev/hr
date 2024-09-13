@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_messaging/firebase_messaging.dart';
+// import 'package:cloud_firestore/cloud_firestore.dart';
+// import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:location/location.dart';
@@ -27,9 +27,9 @@ class _LanguageScreenState extends State<LanguageScreen> {
   String _languageCode = "";
 
   int _counter = 0;
-  FirebaseMessaging messaging = FirebaseMessaging.instance;
-  FirebaseFirestore firestore = FirebaseFirestore.instance;
-  CollectionReference users = FirebaseFirestore.instance.collection('users');
+  // FirebaseMessaging messaging = FirebaseMessaging.instance;
+  // FirebaseFirestore firestore = FirebaseFirestore.instance;
+  // CollectionReference users = FirebaseFirestore.instance.collection('users');
   LocationData _currentLocation;
   Location location = Location();
   double latitude;
@@ -72,19 +72,19 @@ class _LanguageScreenState extends State<LanguageScreen> {
   onLoad() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
 
-    messaging.getToken().then((token) async {
-      prefs.setString("fcmToken", token);
-    });
+    // messaging.getToken().then((token) async {
+    //   prefs.setString("fcmToken", token);
+    // });
 
-    var settings = await messaging.requestPermission(
-      alert: true,
-      announcement: false,
-      badge: true,
-      carPlay: false,
-      criticalAlert: false,
-      provisional: false,
-      sound: true,
-    );
+    // var settings = await messaging.requestPermission(
+    //   alert: true,
+    //   announcement: false,
+    //   badge: true,
+    //   carPlay: false,
+    //   criticalAlert: false,
+    //   provisional: false,
+    //   sound: true,
+    // );
 
     String firestoreId = prefs.getString("firestoreId");
     // prefs.setBool("isLogin", false);

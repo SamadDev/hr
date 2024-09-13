@@ -1,5 +1,5 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:firebase_messaging/firebase_messaging.dart';
+// import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:nandrlon/config/themes/light.theme.dart';
 import 'package:nandrlon/helper/text.helper.dart';
@@ -18,7 +18,7 @@ class CompanyScreen extends StatefulWidget {
 }
 
 class _CompanyScreenState extends State<CompanyScreen> {
-  FirebaseMessaging messaging = FirebaseMessaging.instance;
+  // FirebaseMessaging messaging = FirebaseMessaging.instance;
 
   @override
   void initState() {
@@ -27,10 +27,10 @@ class _CompanyScreenState extends State<CompanyScreen> {
   }
 
   onLoad() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    messaging.getToken().then((token) async {
-      prefs.setString("fcmToken", token);
-    });
+    // SharedPreferences prefs = await SharedPreferences.getInstance();
+    // messaging.getToken().then((token) async {
+    //   prefs.setString("fcmToken", token);
+    // });
   }
 
   @override

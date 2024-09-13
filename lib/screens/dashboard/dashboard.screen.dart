@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:firebase_messaging/firebase_messaging.dart';
+// import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
@@ -76,77 +76,77 @@ class _DashboardScreenState extends State<DashboardScreen> {
       _dashboard = dashboard;
     });
 
-    FirebaseMessaging.onMessage.listen((RemoteMessage message) {
-      RemoteNotification notification = message.notification;
-      AndroidNotification android = message.notification?.android;
-
-      if (notification != null && android != null) {
-        flutterLocalNotificationsPlugin.show(
-            notification.hashCode,
-            notification.title,
-            notification.body,
-            NotificationDetails(
-              android: AndroidNotificationDetails(
-                channel.id,
-                channel.name,
-                //todo uncomment
-                // channel.description,
-                color: Colors.blue,
-                playSound: true,
-                icon: '@mipmap/ic_lancher',
-              ),
-            ));
-      }
-    });
+    // FirebaseMessaging.onMessage.listen((RemoteMessage message) {
+    //   RemoteNotification notification = message.notification;
+    //   AndroidNotification android = message.notification?.android;
+    //
+    //   if (notification != null && android != null) {
+    //     flutterLocalNotificationsPlugin.show(
+    //         notification.hashCode,
+    //         notification.title,
+    //         notification.body,
+    //         NotificationDetails(
+    //           android: AndroidNotificationDetails(
+    //             channel.id,
+    //             channel.name,
+    //             //todo uncomment
+    //             // channel.description,
+    //             color: Colors.blue,
+    //             playSound: true,
+    //             icon: '@mipmap/ic_lancher',
+    //           ),
+    //         ));
+    //   }
+    // });
     //Message for Background
-    FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) {
-      
-      RemoteNotification notification = message.notification;
-      AndroidNotification android = message.notification?.android;
-
-      if (notification != null && message.data != null) {
-        
-        
-        String action = message.data["action"];
-        if (action == "leave-approval") {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => ApprovalLeaveScreen(
-                leaveId: int.parse(message.data["id"]),
-              ),
-            ),
-          );
-        } else if (action == "leave-detail") {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => DetailLeaveScreen(
-                leaveId: int.parse(message.data["id"]),
-              ),
-            ),
-          );
-        } else if (action == "company-policies") {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => CompanyPolicyDetailScreen(
-                id: int.parse(message.data["id"]),
-              ),
-            ),
-          );
-        }else if (action == "announcements") {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => AnnouncementDetailScreen(
-                id: int.parse(message.data["id"]),
-              ),
-            ),
-          );
-        }
-      }
-    });
+    // FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) {
+    //
+    //   RemoteNotification notification = message.notification;
+    //   AndroidNotification android = message.notification?.android;
+    //
+    //   if (notification != null && message.data != null) {
+    //
+    //
+    //     String action = message.data["action"];
+    //     if (action == "leave-approval") {
+    //       Navigator.push(
+    //         context,
+    //         MaterialPageRoute(
+    //           builder: (context) => ApprovalLeaveScreen(
+    //             leaveId: int.parse(message.data["id"]),
+    //           ),
+    //         ),
+    //       );
+    //     } else if (action == "leave-detail") {
+    //       Navigator.push(
+    //         context,
+    //         MaterialPageRoute(
+    //           builder: (context) => DetailLeaveScreen(
+    //             leaveId: int.parse(message.data["id"]),
+    //           ),
+    //         ),
+    //       );
+    //     } else if (action == "company-policies") {
+    //       Navigator.push(
+    //         context,
+    //         MaterialPageRoute(
+    //           builder: (context) => CompanyPolicyDetailScreen(
+    //             id: int.parse(message.data["id"]),
+    //           ),
+    //         ),
+    //       );
+    //     }else if (action == "announcements") {
+    //       Navigator.push(
+    //         context,
+    //         MaterialPageRoute(
+    //           builder: (context) => AnnouncementDetailScreen(
+    //             id: int.parse(message.data["id"]),
+    //           ),
+    //         ),
+    //       );
+    //     }
+    //   }
+    // });
 
 
   }
