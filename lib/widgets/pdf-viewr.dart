@@ -9,7 +9,7 @@ import 'package:nandrlon/widgets/loading.widget.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:http/http.dart' as http;
-import 'package:flutter_pdfview/flutter_pdfview.dart';
+// import 'package:flutter_pdfview/flutter_pdfview.dart';
 
 class PDFViewr extends StatefulWidget {
   PDFViewr({
@@ -31,8 +31,7 @@ class PDFViewr extends StatefulWidget {
 
 class _PDFViewrState extends State<PDFViewr> {
   String remotePDFpath;
-  final Completer<PDFViewController> _controller =
-      Completer<PDFViewController>();
+  // final Completer<PDFViewController> _controller = Completer<PDFViewController>();
   int pages = 0;
   int currentPage = 0;
   bool isReady = false;
@@ -100,50 +99,51 @@ class _PDFViewrState extends State<PDFViewr> {
         ],
       ),
       body: remotePDFpath == null
-          ? LoadingWidget()
-          : PDFView(
-              filePath: remotePDFpath,
-              enableSwipe: true,
-              swipeHorizontal: true,
-              fitEachPage: true,
-              autoSpacing: false,
-              pageFling: true,
-              pageSnap: true,
-              defaultPage: currentPage,
-              fitPolicy: FitPolicy.BOTH,
-              preventLinkNavigation: false,
-              // if set to true the link is handled in flutter
-              onRender: (_pages) {
-                setState(() {
-                  pages = _pages;
-                  isReady = true;
-                });
-              },
-              onError: (error) {
-                setState(() {
-                  errorMessage = error.toString();
-                });
-                
-              },
-              onPageError: (page, error) {
-                setState(() {
-                  errorMessage = '$page: ${error.toString()}';
-                });
-                
-              },
-              onViewCreated: (PDFViewController pdfViewController) {
-                _controller.complete(pdfViewController);
-              },
-              onLinkHandler: (String uri) {
-                
-              },
-              onPageChanged: (int page, int total) {
-                
-                setState(() {
-                  currentPage = page;
-                });
-              },
-            ),
+          ? LoadingWidget():SizedBox()
+          //todo unComment
+      // PDFView(
+      //         filePath: remotePDFpath,
+      //         enableSwipe: true,
+      //         swipeHorizontal: true,
+      //         fitEachPage: true,
+      //         autoSpacing: false,
+      //         pageFling: true,
+      //         pageSnap: true,
+      //         defaultPage: currentPage,
+      //         fitPolicy: FitPolicy.BOTH,
+      //         preventLinkNavigation: false,
+      //         // if set to true the link is handled in flutter
+      //         onRender: (_pages) {
+      //           setState(() {
+      //             pages = _pages;
+      //             isReady = true;
+      //           });
+      //         },
+      //         onError: (error) {
+      //           setState(() {
+      //             errorMessage = error.toString();
+      //           });
+      //
+      //         },
+      //         onPageError: (page, error) {
+      //           setState(() {
+      //             errorMessage = '$page: ${error.toString()}';
+      //           });
+      //
+      //         },
+      //         onViewCreated: (PDFViewController pdfViewController) {
+      //           _controller.complete(pdfViewController);
+      //         },
+      //         onLinkHandler: (String uri) {
+      //
+      //         },
+      //         onPageChanged: (int page, int total) {
+      //
+      //           setState(() {
+      //             currentPage = page;
+      //           });
+      //         },
+      //       ),
     );
   }
 }

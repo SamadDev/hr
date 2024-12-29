@@ -7,6 +7,8 @@ import 'package:nandrlon/models/hrms/employee/profile.model.dart';
 import 'package:nandrlon/models/hrms/leave/leave-result.model.dart';
 import 'package:nandrlon/models/team.model.dart';
 
+import '../models/hrms/RequestResult.dart';
+import '../models/login.dart';
 import 'data.service.dart';
 
 class EmployeeService {
@@ -50,6 +52,11 @@ class EmployeeService {
 
   static Future<dynamic> checkPhone(String phoneNo) async {
     return await DataService.post('mobile/hr/employees/verify', phoneNo);
+  }
+
+  static Future<RequestResult> signIn(LoginRequest loginRequest) async {
+    var result = await DataService.post('Authentication', loginRequest);
+    return RequestResult.fromJson(result);
   }
 
   static Future<dynamic> updateToken(int employeeId, String token) async {

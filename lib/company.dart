@@ -85,8 +85,8 @@ class _CompanyScreenState extends State<CompanyScreen> {
               color: Colors.blue.shade400,
               onTap: () async {
                 var prefs = await SharedPreferences.getInstance();
-                prefs.setString("api", "http://hr.dottech.co");
-                box.write("api", "http://hr.dottech.co");
+                prefs.setString("api", "https://test.oneteamhris.com");
+                box.write("api", "https://test.oneteamhris.com/");
                 // box.write("api", "https://localhost:5001");
                 prefs.setInt("primaryColor", 0xff124993);
                 prefs.setString("company", "DOTTECH");

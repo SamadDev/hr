@@ -37,7 +37,6 @@ dependencies:
   map_launcher: ^2.1.1
   intl: ^0.17.0
   flutter_image_slideshow: ^0.1.2
-  syncfusion_flutter_datepicker: ^19.3.54
   image_picker: ^0.8.6
   file_picker: ^4.2.4
   modal_bottom_sheet: ^2.0.0
@@ -45,16 +44,13 @@ dependencies:
   geocoding: ^2.0.1
   json_annotation: ^4.4.0
   loader_overlay: ^2.0.5
-  flutter_pdfview: ^1.2.1
   path_provider: ^2.0.9
   flutter_share: ^2.0.0
-  flutter_local_notifications: ^9.4.0
   get_storage: ^2.0.3
   flutter_html: ^2.2.1
   easy_localization: ^3.0.1
-  firebase_remote_config: ^2.0.9
   package_info_plus: ^1.4.2
-
+#  flutter_pdfview: ^1.1.0
 dev_dependencies:
   flutter_test:
     sdk: flutter

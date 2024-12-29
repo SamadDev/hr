@@ -18,7 +18,7 @@ import 'package:nandrlon/services/task.service.dart';
 import 'package:nandrlon/widgets/appbar.widget.dart';
 import 'package:nandrlon/widgets/layout.widget.dart';
 import 'package:nandrlon/widgets/list.widget.dart';
-import 'package:syncfusion_flutter_datepicker/datepicker.dart';
+// import 'package:syncfusion_flutter_datepicker/datepicker.dart';
 
 class TaskListScreen extends StatefulWidget {
   TaskListScreen({
@@ -45,7 +45,7 @@ class _TaskListScreenState extends State<TaskListScreen> {
   TaskParameters _taskParameters;
   List<ContactResult> _contacts = [];
   final _scrollController = ScrollController();
-  DateRangePickerController _controller;
+  // DateRangePickerController _controller;
   List<String> _months;
   bool _selected;
   int _selectedIndex;
@@ -55,7 +55,7 @@ class _TaskListScreenState extends State<TaskListScreen> {
     _taskParameters = new TaskParameters();
     _taskParameters.fromDate = _dateFormat.format(DateTime.now());
     _taskParameters.toDate = _dateFormat.format(DateTime.now());
-    _controller = DateRangePickerController();
+    // _controller = DateRangePickerController();
     _months = <String>[
       'JANUARY',
       'FEBRUARY',
@@ -295,8 +295,8 @@ class _TaskListScreenState extends State<TaskListScreen> {
                           setState(() {
                             _selected = true;
                             _selectedIndex = index;
-                            _controller.displayDate =
-                                DateTime(2021, _selectedIndex, 1, 9, 0, 0);
+                            // _controller.displayDate =
+                            //     DateTime(2021, _selectedIndex, 1, 9, 0, 0);
                           });
                         },
                         child: Container(
@@ -339,30 +339,30 @@ class _TaskListScreenState extends State<TaskListScreen> {
                   ),
                 ),
               ),
-              child: SfDateRangePicker(
-                backgroundColor: Colors.white,
-                controller: _controller,
-                selectionColor: Theme.of(context).primaryColor,
-                view: DateRangePickerView.month,
-                headerHeight: 0,
-                cellBuilder: cellBuilder,
-                initialDisplayDate: DateTime.now(),
-                initialSelectedDate: DateTime.now(),
-                onSelectionChanged: (value) {
-                  _taskParameters.fromDate = _dateFormat.format(value.value);
-                  _taskParameters.toDate = _dateFormat.format(value.value);
-
-                  setState(() {
-                    _tasks = null;
-                  });
-
-                  getTasks();
-                },
-                monthViewSettings: DateRangePickerMonthViewSettings(
-                  viewHeaderHeight: 0,
-                  numberOfWeeksInView: 1,
-                ),
-              ),
+              // child: SfDateRangePicker(
+              //   backgroundColor: Colors.white,
+              //   controller: _controller,
+              //   selectionColor: Theme.of(context).primaryColor,
+              //   view: DateRangePickerView.month,
+              //   headerHeight: 0,
+              //   cellBuilder: cellBuilder,
+              //   initialDisplayDate: DateTime.now(),
+              //   initialSelectedDate: DateTime.now(),
+              //   onSelectionChanged: (value) {
+              //     _taskParameters.fromDate = _dateFormat.format(value.value);
+              //     _taskParameters.toDate = _dateFormat.format(value.value);
+              //
+              //     setState(() {
+              //       _tasks = null;
+              //     });
+              //
+              //     getTasks();
+              //   },
+              //   monthViewSettings: DateRangePickerMonthViewSettings(
+              //     viewHeaderHeight: 0,
+              //     numberOfWeeksInView: 1,
+              //   ),
+              // ),
             ),
             Expanded(
               child: Container(
@@ -399,35 +399,35 @@ class _TaskListScreenState extends State<TaskListScreen> {
     );
   }
 
-  Widget cellBuilder(BuildContext context, DateRangePickerCellDetails details) {
-    var IsSelected = _controller.selectedDate != null &&
-        details.date.year == _controller.selectedDate.year &&
-        details.date.month == _controller.selectedDate.month &&
-        details.date.day == _controller.selectedDate.day;
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Container(
-          child: Text(
-            details.date.day.toString(),
-            textAlign: TextAlign.center,
-            style: TextStyle(
-                color: IsSelected ? Colors.white : Colors.black87,
-                fontWeight: IsSelected ? FontWeight.w600 : FontWeight.w500),
-          ),
-        ),
-        Container(
-          child: Text(
-            DateFormat('EEE', 'en_Us').format((details.date)),
-            style: TextStyle(
-                color: IsSelected ? Colors.white : Colors.black87,
-                fontWeight: IsSelected ? FontWeight.w600 : FontWeight.w500),
-          ),
-        ),
-      ],
-    );
-  }
+  // Widget cellBuilder(BuildContext context, DateRangePickerCellDetails details) {
+  //   var IsSelected = _controller.selectedDate != null &&
+  //       details.date.year == _controller.selectedDate.year &&
+  //       details.date.month == _controller.selectedDate.month &&
+  //       details.date.day == _controller.selectedDate.day;
+  //   return Column(
+  //     crossAxisAlignment: CrossAxisAlignment.center,
+  //     mainAxisAlignment: MainAxisAlignment.center,
+  //     children: [
+  //       Container(
+  //         child: Text(
+  //           details.date.day.toString(),
+  //           textAlign: TextAlign.center,
+  //           style: TextStyle(
+  //               color: IsSelected ? Colors.white : Colors.black87,
+  //               fontWeight: IsSelected ? FontWeight.w600 : FontWeight.w500),
+  //         ),
+  //       ),
+  //       Container(
+  //         child: Text(
+  //           DateFormat('EEE', 'en_Us').format((details.date)),
+  //           style: TextStyle(
+  //               color: IsSelected ? Colors.white : Colors.black87,
+  //               fontWeight: IsSelected ? FontWeight.w600 : FontWeight.w500),
+  //         ),
+  //       ),
+  //     ],
+  //   );
+  // }
 }
 
 class TaskListTile extends StatelessWidget {
